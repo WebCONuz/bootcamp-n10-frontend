@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 70px;
+  background-color: brown;
+  opacity: 80%;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.container {
+  width: 85%;
+  margin: 0 auto;
+  position: relative;
+}
+.item1 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  position: absolute;
+  top: 150px;
+  left: 0;
+}
+
+/* .main {
+  height: 100vh;
+  background-image: url("../images/author.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+} */
+/* 
+#item1 a {
+  color: red;
+}
+
+#menu a {
+  color: green;
+}
+
+#menu a.active {
+  color: orange;
+}
+#menu a[href="https://kun.uz"]
+{
+  color: black;
+} */
+
+.main {
+  font-size: 30px;
+}
+.container {
+  font-size: 0.5em;
+}
+
+.container-box {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between;
+  gap: 50px; */
+}
+/* .container-box div {
+  width: calc(100% / 3 - 20px);
+  margin: 10px;
+  height: 150px;
+  background-color: blueviolet;
+  border: 1px solid orange;
+} */
+.container-box aside {
+  width: 30%;
+  height: calc(100vh - 70px);
+  background-color: aqua;
+  overflow: auto;
+}
+.container-box section {
+  width: 70%;
+  height: calc(100vh - 70px);
+  background-color: bisque;
+  overflow-y: scroll;
+}
