@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pense</title>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+            padding: {
+              DEFAULT: "1rem",
+              sm: "2rem",
+              lg: "4rem",
+              xl: "5rem",
+              "2xl": "6rem",
+            },
+          },
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- box-icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="max-w-[2200px] mx-auto">
+    <!-- HEADER -->
+    <header class="mt-[57px] mb-[106px]">
+      <div class="container py-3 flex items-center justify-between">
+        <a href="#">
+          <img src="./images/Logo.png" alt="logo" class="w-[112px]" />
+        </a>
+        <nav class="hidden lg:flex gap-x-10">
+          <a href="#" class="text-lg hover:text-[#FF7235] duration-200"
+            >Features</a
+          >
+          <a href="#" class="text-lg hover:text-[#FF7235] duration-200"
+            >About us</a
+          >
+          <a href="#" class="text-lg hover:text-[#FF7235] duration-200"
+            >Pricing</a
+          >
+          <a href="#" class="text-lg hover:text-[#FF7235] duration-200"
+            >Feedback</a
+          >
+        </nav>
+        <button
+          class="hidden lg:block py-[15px] px-[18px] border border-[#FF7235] text-[#FF7235] rounded-md hover:bg-[#FF7235] hover:text-[#Fff] duration-200"
+        >
+          Request a demo
+        </button>
+        <div
+          class="lg:hidden cursor-pointer border border-[#FF7235] w-10 py-[2px] rounded-md flex items-center justify-center"
+        >
+          <i class="bx bx-menu text-[#FF7235] text-2xl"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- INTRO -->
+    <main class="intro pb-[211px]">
+      <div
+        class="container flex flex-col-reverse lg:flex-row items-center justify-between"
+      >
+        <div class="intro__text w-full lg:w-1/2">
+          <h1
+            class="text-center lg:text-left text-[70px] xl:text-[96px] font-bold leading-[75px] xl:leading-[96px] mb-5"
+          >
+            Track your Expenses & Save Money
+          </h1>
+          <p
+            class="text-center lg:text-left mb-10 text-[#BDBDBD] text-xl xl:text-2xl"
+          >
+            Helps you to organize your income and expenses
+          </p>
+          <div
+            class="flex items-center gap-x-4 xl:gap-x-6 justify-center lg:justify-start"
+          >
+            <button
+              class="py-[15px] flex items-center px-[18px] border border-[#FF7235] hover:text-[#FF7235] hover:bg-white rounded-md bg-[#FF7235] text-[#Fff] duration-200"
+            >
+              <span class="mr-1">Request a demo </span>
+              <i class="bx bx-chevron-down text-xl xl:text-2xl"></i>
+            </button>
+            <a href="#" class="text-[#BDBDBD] text-xl xl:text-3xl"
+              >— Web, iOS and Android</a
+            >
+          </div>
+        </div>
+        <img
+          src="./images/Illustration.jpg"
+          alt="intro-img"
+          class="w-4/5 lg:w-1/2 xl:w-2/5 mb-20 lg:mb-0"
+        />
+      </div>
+    </main>
+
+    <!-- APPLICATION -->
+    <section class="app bg-[#FF7235] pt-10 sm:pt-[87px] relative">
+      <img
+        src="./images/Vector.png"
+        alt="vector"
+        class="absolute top-0 right-0 w-[25%] md:w-auto hidden sm:block"
+      />
+      <img
+        src="./images/Vector1.png"
+        alt="vector"
+        class="absolute bottom-0 left-0 w-[25%] md:w-auto hidden sm:block"
+      />
+      <div class="container relative z-10">
+        <img src="./images/app.jpg" alt="app" class="w-full rounded-t-[32px]" />
+      </div>
+    </section>
+  </body>
+</html>
