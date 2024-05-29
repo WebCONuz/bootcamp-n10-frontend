@@ -5,6 +5,7 @@ import Sidebar from "../components/Siderbar.vue";
 import Grid from "../components/Grid.vue";
 import Carousel from "../components/Carousel.vue";
 import Login from "../components/Login.vue";
+import Dropdown from "../components/Dropdown.vue";
 </script>
 
 <template>
