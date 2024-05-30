@@ -6,6 +6,7 @@ import Grid from "../components/Grid.vue";
 import Carousel from "../components/Carousel.vue";
 import Login from "../components/Login.vue";
 import Dropdown from "../components/Dropdown.vue";
+import Chart from "../components/Chart.vue";
 </script>
 
 <template>
@@ -17,6 +18,7 @@ import Dropdown from "../components/Dropdown.vue";
       <Grid class="w-3/4" />
     </div>
     <Login />
+    <Chart />
     <Carousel class="border border-red-500" />
   </main>
 </template>
