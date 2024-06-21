@@ -11,10 +11,15 @@ import Header from "../components/Header.vue";
     <div class="w-4/5 h-screen overflow-y-auto bg-[#F8F8F8]">
       <Header />
       <div class="p-5">
-        <RouterView />
+        <!-- <RouterView /> -->
+        <router-view v-slot="{ Component }">
+          <transition name="fade">
+            <component :is="Component" />
+          </transition>
+        </router-view>
       </div>
     </div>
   </main>
 </template>
 
-<style scoped></style>
+<style></style>
